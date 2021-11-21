@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+  /*  border: 0px;*/
+}
+html,body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+a{
+    color: white;
+}
+/*Button and hover effect*/
+div[class*=box] {
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+  }
+  .btn-two {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative; 
+  }
+  .btn-two span {
+    z-index: 2; 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+  }
+  .btn-two::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.1);
+  }
+  .btn-two:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255,255,255,0);
+  }
+  .btn-two:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255,255,255,0);
+  }
+  
+  
+
+
+
+main{
+    background-image: url(../images/retrobackroundimg.jpg);
+    height: 60vh;
+    background-size: cover;
+    
+}
+
+h1,h2,h3,h4{
+    text-align: center;
+    margin: 0px;
+}
+
+
+
+/* Handythrowgame */
+
+#handythrowpic{
+    height: 15vh;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+p{
+    color: white;
+}
+
+center{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#gamevalues p{
+    color: white;
+}
+
+body {
+    background-color: black;
+  }
+  span{
+      color: white;
+  }
+  #earth {
+    width: 300px;
+    height: 300px;
+    background: url(../images/Earth.jpg);
+    border-radius: 50%;
+    background-size: 610px;
+    box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0),
+    inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+    animation-name: rotate;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from { background-position: 0px 0px; }
+    to { background-position: 500px 0px; }
+}
+@-webkit-keyframes rotate {
+    from { background-position: 0px 0px; }
+    to { background-position: 500px 0px; }
+}
+
+
+ h1, h2, h3{
+    color: white;
+}
+.large{
+    font-size: 110px;
+    color:white;
+}
+#gamevalues{
+    text-align: center;
+}
+
+/* Rock Paper Scissors Game */
+
+.screen{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px #FFF;
+    padding: 80px 40px;
+    
+    margin: 10px;
+}
+.active{
+    display: flex;
+}
+
+/*GuessNumbersGame*/
+
+#GuessNumbersInput{
+    text-align: center;
+    margin-top: 80px;
+}
+#difference{
+   text-align: center;
+}
+#popup{
+    background-color: black;
+    text-align: center;
+    display:flex;
+    position: absolute;
+    box-shadow: 1px 1px 10px #777;
+    padding: 100px 40px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    
+     
+}
+
+#codeHints p{
+    text-align: center;
+}
+
+
+/* Menu */
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    list-style: none;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    transition: all 400ms;
+}
+
+nav ul li a:hover{
+    opacity: 0.7;
+}
+nav li:after {
+    content: '';
+    border-bottom: 1px solid white;
+    display: inline-block;
+    width: 0%; 
+    transition: all 500ms;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+ }
+  nav li:hover::after{
+    width: 100%;
+}

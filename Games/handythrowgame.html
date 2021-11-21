@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handythrowgame</title>
+    <link rel="stylesheet" href="../Games/css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+<h2>Handythrowgame</h2>
+
+
+<div class="container">
+<nav id="menu">
+<ul>
+<li><a href="handythrowgame.html" target="_blank">Handythrowgame</a></li>
+<li><a href="RockPaperScissors.html" target="_blank">RockPaperScissors</a></li>
+<li><a href="Guessnumbers.html" target="_blank">GuessNumbers</a></li>
+<li><a href="CodeBreaker.html" target="_blank">CodeBreaker</a></li>
+
+
+</ul>
+
+
+</nav>
+
+
+
+
+
+</div>
+
+
+<div class="container">
+    <div class="flex">
+        <img id="handythrowpic" src="images/handythrow.jpg" alt="handythrow">
+        <i class="fab fa-optin-monster large"></i>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <p>Rules: Try to hit the monster. First enter the planet you want to play on. Afterwards the speed and angle of your throw.
+                      You will have 3 tries. GOOD LUCK!
+            </p>
+            <span>Hint: By changing the planet the gravitational acceleration will change.</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <select onchange="changeWorlds()" id="planetselection" name="planet">
+                <option  value="9.81">Earth</option>
+                <option  value="1.62">Moon</option>
+                <option  value="3.69">Mars</option>
+                <option  value="24.79">Jupiter</option>
+            
+            </select>
+            <div id="earth"></div>
+        </div>
+        <div class="col-6 center">
+            
+
+<input type="number" name="speed" placeholder="speed">
+<input type="number" name="angle" placeholder="angle 1-90">
+
+
+    <button onclick="calculateThrow()">calculate your throw</button>
+
+</div>
+
+
+
+</div>
+<div id="gamevalues">
+    <p id="distanceAway"></p>
+    <p id="trycount"></p>
+    <div id="winnerImage">
+        
+    </div>
+
+</div>
+
+
+
+
+</div>
+
+
+
+    <script type="text/Javascript" src="js/script.js"></script>
+</body>
+</html>
