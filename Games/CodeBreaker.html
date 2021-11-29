@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Games/css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href ="css/style.css">
+    <title>Code Breaker</title>
+</head>
+
+    <h2>Guess the Code</h2>
+
+    <div class="container">
+        <nav id="menu">
+        <ul>
+        <li><a href="handythrowgame.html" target="_blank">Handythrowgame</a></li>
+        <li><a href="RockPaperScissors.html" target="_blank">RockPaperScissors</a></li>
+        <li><a href="Guessnumbers.html" target="_blank">GuessNumbers</a></li>
+        <li><a href="CodeBreaker.html" target="_blank">CodeBreaker</a></li>
+        
+        
+        </ul>
+        
+        
+        </nav>
+        
+        
+        
+        
+        
+        </div>
+        
+
+
+
+<div id="GuessNumbersInput" class="screen active">
+    <input type="number" id="numTries" placeholder="Tries (12max)">
+    
+    <button onclick="startCode()">Start the game</button>
+</div>
+    <div id="codeBreakervalues" class="screen">
+
+        <input type="text" id="yourCode" placeholder="111-999">
+        <button onclick="guessCode()">Guess the number</button>
+       
+        
+    
+    </div>
+    <div id="codeHints">
+        <p id="testnested"></p>
+        <p id="testfor"></p>
+        <p id="correctNumbers"></p>
+       
+
+    </div>
+
+
+
+
+    <script type="text/Javascript" src="js/script.js"></script>
+</body>
+</html>

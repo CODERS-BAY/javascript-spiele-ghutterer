@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Numbers</title>
+    <link rel="stylesheet" href="../Games/css/style.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+
+   
+
+    <h2>Guess a Number</h2>
+
+    <div class="container">
+        <nav id="menu">
+        <ul>
+        <li><a href="handythrowgame.html" target="_blank">Handythrowgame</a></li>
+        <li><a href="RockPaperScissors.html" target="_blank">RockPaperScissors</a></li>
+        <li><a href="Guessnumbers.html" target="_blank">GuessNumbers</a></li>
+        <li><a href="CodeBreaker.html" target="_blank">CodeBreaker</a></li>
+        
+        
+        </ul>
+        
+        
+        </nav>
+        
+        
+        
+        
+        
+        </div>
+        
+
+<div id="GuessNumbersInput" class="screen active">
+    <input type="number" id="numberOfTries" placeholder="numberOfTries">
+    <input type="number" id="upperLimit" placeholder="upperLimit">
+    <button onclick="startGame()">Start the game</button>
+</div>
+
+<div id="guessNumberValues" class="screen">
+
+    <input type="number" id="yourGuess" placeholder="Your Guess">
+    <button onclick="guessNumber()">Guess the number</button>
+    
+
+</div>
+<p id="difference"></p>
+
+    <script type="text/Javascript" src="js/script.js"></script>
+   
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="../Games/css/stylerps.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/all.css">
+   
+</head>
+
+
+<h2>Rock Paper Scissors</h2>
+<div class="container">
+    <nav id="menu">
+    <ul>
+    <li><a href="handythrowgame.html" target="_blank">Handythrowgame</a></li>
+    <li><a href="RockPaperScissors.html" target="_blank">RockPaperScissors</a></li>
+    <li><a href="Guessnumbers.html" target="_blank">GuessNumbers</a></li>
+    <li><a href="CodeBreaker.html" target="_blank">CodeBreaker</a></li>
+    
+    
+    </ul>
+    
+    
+    </nav>
+    
+    
+    
+    
+    
+    </div>
+    
+
+<body>
+    
+    
+
+    <div class="screen active">
+        <h3>How often do you want to play</h3>
+        <input type="number" id="counterInput" name="counterInput">
+        <button onclick="readCounter()">Counter einlesen</button>
+
+    </div>
+    
+    <div class="screen direction">
+        <h2>Rock Paper Scissors Game</h2>
+        <div class="grid">
+            
+            <img id="userImage" src="../Games/images/Muster.jpg">
+            <p>VS</p>
+            <img id="pcImage" src="../Games/images/Muster.jpg">
+
+            <img src="images/rock.jpg" alt="RockImage" onclick="play(1)">
+            <img src="images/paper.jpg" alt="PaperImage" onclick="play(2)">
+            <img src="images/scissors.jpg" alt="ScissorsImage" onclick="play(3)">
+
+        </div>
+    </div>
+
+
+
+    <script type="text/Javascript" src="js/script.js"></script>
+</body>
+</html>
